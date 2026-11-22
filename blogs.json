@@ -1,0 +1,23 @@
+{
+  "categories": [
+    {
+      "id": "bugbounty",
+      "title": "Bug Bounty Series",
+      "description": "Documenting my bug bounty journey, learning web security, discovering vulnerabilities and understanding how to find them.",
+      "posts": []
+    },
+    {
+      "id": "instagram",
+      "title": "How Hackers Hack Instagram",
+      "description": "Explore the techniques, vulnerabilities and security concepts behind real-world Instagram account attacks and learn how to protect yourself.",
+      "posts": [
+        {
+          "day": "DAY 01",
+          "title": "RECON: They Study You Before They Touch You",
+          "description": "Understanding OSINT, public information and digital footprints.",
+          "url": "https://iamrudhh.medium.com/the-hack-started-three-weeks-before-0cc5e43cda78?sharedUserId=iamrudhh"
+        }
+      ]
+    }
+  ]
+}

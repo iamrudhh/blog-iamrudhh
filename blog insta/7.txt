@@ -1,0 +1,104 @@
+What They Did With Her Account While She Slept
+The forty-eight hours after the takeover, and the stack she built afterwards
+Priya's hack began with a favour and ended with a spreadsheet.
+
+She went to bed at 11pm with her account intact. She woke at 7am to a phone that wanted a password, and a login screen where her feed should have been.
+
+By then, the work was already done. Everything that follows happened in the six hours she was asleep.
+
+The First Two Minutes
+The attacker was in at 11:04pm, roughly forty seconds after she typed her password into the fake page.
+
+Minute one: changed the recovery email to an address she'd never seen. Minute two: attached their own authenticator app to the account. Then, methodically, they killed every active session — including the one on the phone beside her pillow.
+
+That's the sequence, and the order matters. Recovery first, then the lock, then the eviction. By the time she was awake there was nothing left to log into, and no way to prove the account was hers through the normal channels, because the channels now pointed at a stranger.
+
+The password she knew was the least useful thing she owned.
+
+A takeover isn't a break-in. It's a change of locks while you're still inside.
+
+The Lockout
+Her first instinct was the reset flow. She typed her email, tapped "forgot password," and waited for the link.
+
+It went to the attacker's inbox.
+
+She tried again. Same. She tried through her linked Facebook, which she hadn't used since 2019 and which they'd unlinked within the first ten minutes.
+
+She filed a support ticket. It bounced back with an automated reply asking her to log in. She couldn't log in. She filed five more.
+
+This is the part nobody prepares for: the machinery that's meant to help you assumes you're already inside. Once you're out, it's a slow grind of forms and video selfies and waiting, and the waiting is the worst of it.
+
+It took her two days and a lot of stubbornness. She got it back on Thursday.
+
+Recovery is not designed for the person who's locked out. It's designed for the person who forgot a password.
+
+The Sale
+Somewhere around hour three, her account was listed.
+
+Not on a marketplace with a shopfront — on a forum thread and a Telegram channel, with a screenshot of her follower count and a price. 2,300 followers, six years of history, a niche audience of people who buy handmade ceramics. Aged accounts with real engagement are inventory. They come with trust baked in, and trust is the product.
+
+She wasn't the buyer's customer. Her followers were.
+
+The listing had a line at the bottom: "clean, no bans, ready to warm." Warm meant the new owner would post normally for a week before using it for anything.
+
+She'd been a person with a page. Now she was a line item with a warming schedule.
+
+Your account's value isn't measured in followers. It's measured in how much those followers will believe.
+
+The People Who Trusted Her
+The messages started at 1am.
+
+Twenty-two of them, sent from her account to her followers. A story post with a screenshot of a trading dashboard and a caption about a "private group." DMs to her ten most engaged followers, personalised, using their actual names.
+
+"hey, you know I don't post about money stuff but this actually changed my year. link's in my bio."
+
+Her friend Meera sent £180 by 2am. Her cousin sent £90. Her old roommate got as far as entering card details before noticing the site looked off.
+
+Not one of them was careless. They were being messaged by Priya, who they'd known for years, who had never once sent them anything like this.
+
+The attack spread outward from her account and stopped being her problem, which somehow made it worse.
+
+A stolen account is a stolen reputation, and reputations are spent on other people.
+
+The Stack She Built
+Priya got the account back on Thursday afternoon and spent the evening rebuilding it properly, in order.
+
+Passkeys, where offered. Instagram supports them now. Her phone's face unlock replaces the password entirely on her main device, and a phished password alone gets an attacker nowhere.
+
+An authenticator app, not SMS. A rotating code that lives on her phone. A SIM swap no longer touches it.
+
+A password manager. Twenty random characters per site, none of them reused, none of them memorised. Priya@2024 is gone forever.
+
+A clean app permission list. She opened Settings → Apps and Websites and revoked everything. Eleven apps, three of which she'd forgotten existed, two of which had DM access.
+
+Recovery codes, on paper. Written out, folded, in a drawer. Not screenshotted, not in her notes, not synced to the email her account runs on.
+
+A monthly device audit. "Where you're logged in," first of every month, alongside her rent. Anything she doesn't recognise, logged out on sight.
+
+A separate email for the account. Not her main one. Not the one from school. Not the one in two breaches.
+
+It took her ninety minutes. It would have taken her twenty if she'd done it before.
+
+The best time to build a defence is before you need one. The second best is the evening after.
+
+What She Says Now
+Priya still posts. She's more careful about her grid than her security, which is normal, and she knows it.
+
+But she does one thing differently: every time a DM asks her to log in somewhere, she closes it and opens the app. Every time. No exceptions, no matter who it's from, no matter how short the message.
+
+It costs her one tap. It closes the entire chain that started on a Tuesday and ended in her cousin's card details.
+
+She also wrote her recovery codes on the back of an envelope and put it in the drawer with her passport. It's the least technical thing she owns and it's the thing that would have saved her the two days.
+
+The Short Version
+If you only remember one paragraph from this series, make it this one:
+
+Passkeys first. Authenticator app second. Unique passwords from a manager. Recovery codes on paper. Device list checked monthly. App permissions emptied. Never log in from a link in a DM. And if it happens anyway — log out of all devices, change the email password, then the account password, then post a Story before someone sends money.
+
+Everything in the last seven days was cheap to pull off and cheap to stop. The gap between those two facts is just whether you did the boring part in advance.
+
+Do the boring part.
+
+That's the series. Seven days, seven attack surfaces, one set of habits that closes all of them.
+
+If it helped, save it — and send it to the person in your life who reuses one password everywhere. You know exactly who they are.

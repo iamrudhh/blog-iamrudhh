@@ -1,0 +1,19 @@
+Day 08 of my bug bounty series: working with Burp Suite.
+
+I set it up on Day 03. Today I actually learned to use it.
+
+4 parts I spent time on:
+
+1. Proxy: intercept and inspect requests between browser and server.
+2. Repeater: change a request, resend it, and watch how the app responds.
+3. Target: a map of the application's pages and endpoints.
+4. HTTP history: every captured request and response, ready to review.
+
+Burp doesn't find bugs by itself. It shows you what the app is really doing.
+
+Full write-up on Medium (link in comments).
+Day 09 next: input validation.
+
+What's the first Burp feature you learned?
+
+#BugBounty #BurpSuite #Cybersecurity #EthicalHacking

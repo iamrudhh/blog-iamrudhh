@@ -1,0 +1,19 @@
+Day 10 of my bug bounty series: my first vulnerability hunt.
+
+Ten days of learning. Now it's time to put it together.
+
+Here's the process I'm following:
+
+1. Choose a target: a legal bug bounty program with a clear scope.
+2. Perform recon: gather information before interacting with the app.
+3. Analyze requests: inspect the traffic using Burp Suite.
+4. Document everything: notes on observations, steps and possible findings.
+
+I also check whether an issue is already known before reporting it. That lesson cost me a few rejected reports.
+
+Full write-up on Medium (link in comments).
+Day 11 next.
+
+What was your first target as a beginner?
+
+#BugBounty #Cybersecurity #EthicalHacking #LearningInPublic

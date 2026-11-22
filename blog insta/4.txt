@@ -1,0 +1,89 @@
+They Never Asked For His Password
+One cracked download, one café hotspot, one extension — and an account gone in silence
+Rahul is a design student and his software budget is zero.
+
+So when a "free full version" of the editing suite he needed appeared in a tutorial video description, he downloaded it. The installer had a banner ad, a couple of extra checkboxes he clicked past, and then the software opened and worked. Job done.
+
+Three weeks later he was in a café, on their free Wi-Fi, installing a Chrome extension that promised to show him who unfollowed him.
+
+A month after that, someone logged into his Instagram from a city he's never been to. No password prompt. No verification code. No notification he noticed.
+
+He changed his password immediately, which was the right instinct and completely useless, because his password was never the thing that got stolen.
+
+Here's the anatomy of the whole thing.
+
+The Cookie
+Every time you log into a website, the site hands your browser a small file and says: keep this. It's how you stay logged in. Without it you'd type your password every time you refreshed.
+
+That file is the login. Not a record of the login — the thing itself. Present a valid cookie and Instagram doesn't ask who you are, it just opens the door and lets you in, because you're carrying the key.
+
+The cookie is not your password. It's better than your password. It works without being typed, without being remembered, and without a single prompt you could spot.
+
+Your logged-in state is an object sitting on your hard drive. Objects can be copied.
+
+The Download
+The installer Rahul ran was a real copy of the software with something riding along inside it.
+
+Not a virus in the dramatic sense. An infostealer — small, quiet, single-purpose. These don't pop up windows or slow your machine down. They open your browser's cookie store, scoop out the files, and upload them somewhere.
+
+The upload took under a second on his connection. He noticed nothing.
+
+The files sat in a stranger's folder for weeks, matching his machine to his logins to his Instagram handle. When they finally used it, the cookie was still valid, because Instagram sessions don't expire on a timer that anyone checks. They expire when you log out — and Rahul never logged out. Nobody does.
+
+Free software is free because someone found another way to get paid.
+
+The Café
+The Wi-Fi in that café was called Cafe_Rahul_Loves — or close enough.
+
+There was a second network in the list too, Cafe_Free_WiFi, with a full signal and no password. He connected to that one, because it was easier and it looked official.
+
+It was a laptop in a bag two tables over.
+
+An evil twin is just a hotspot with a convincing name. When you join it, the attacker sits between you and the internet. Every page you load passes through their machine first, and they can serve you a copy of any page they like — including a login screen that isn't the one you think you're on.
+
+Rahul logged into his email on that network. On the fake copy he'd been handed, the password went to the laptop in the bag.
+
+A Wi-Fi network's name is a claim, not a fact. Anyone can make a claim.
+
+The Extension
+The unfollower extension asked for permission to "read and change all your data on all websites you visit."
+
+Rahul clicked allow, because that's what the button says and it's the only way to get the feature. It was a real extension with a real feature. It was also, quietly, sitting inside every page he loaded — including every page with a session cookie on it.
+
+Some extensions like this get sold to new owners after they build a user base. The new owner pushes an update, and now the same permissions belong to someone with a different agenda. Nothing looks different. The icon doesn't change.
+
+He'd given a stranger a seat inside his browser and never thought about it again.
+
+Extension permissions are permanent until you take them back. Most people never take them back.
+
+The Logout That Didn't
+When Rahul finally noticed the login alert from a strange city, he did the obvious thing: changed his password.
+
+The session stayed alive.
+
+A stolen cookie doesn't care what your password is. It's already authenticated. Changing the password does not invalidate sessions that were created before the change — not unless you go and kill them yourself.
+
+The account kept working for the attacker for another nine hours, while Rahul sat changing his password a second time and refreshing his email.
+
+What finally worked was one button: log out of all devices. Every session token died at once, including the stolen one. The attacker's next refresh put them on a login screen with nothing to type.
+
+Changing your password closes the door. Logging out of all devices locks it.
+
+What Actually Helps
+This one is more about habits than settings, because there's no toggle that fixes it.
+
+Log out of all devices monthly. Settings → Security → Where you're logged in. It's the only reliable way to kill a copied session, and it takes fifteen seconds.
+Change your password after any suspicious login AND log out everywhere. One without the other does nothing.
+Don't log into anything on public Wi-Fi you don't have to. If you must, use a mobile hotspot. The café can wait.
+Check the network name with staff. "Is your Wi-Fi called Cafe_Free_WiFi?" One question kills the whole evil twin.
+Prune your extensions every few months. If you don't use it weekly, remove it. Check permissions when you install anything.
+Buy or "acquire" software from the developer's own site where you can. Cracked installers are the single most common infostealer delivery method there is.
+Rahul got his account back the same day, mostly because he was awake and fast. He kept the extension — he just read the permissions properly the second time. He stopped downloading cracked software, which lasted about five months.
+
+He also added a rule for himself: the first thing he does after any "new login" email is hit log out of all devices, before he even reads the details.
+
+Password change is the second step now. The lockout comes first.
+
+Day 04 of a series on how Instagram accounts actually get taken, and what stops it. Day 03 covered attacks on 2FA. Day 05 covers password attacks — credential stuffing, brute force and the combo lists your old passwords end up on.
+
+If this helped, follow along — and go open your logged-in devices list right now.

@@ -1,0 +1,21 @@
+Day 02 of my bug bounty series: how the web actually works.
+
+Yesterday was rules and setup. Today I went back to the part most beginners skip.
+
+You can't break what you don't understand. Every bug I'll ever find lives inside a request or a response.
+
+So today I learned 4 things:
+
+1. HTTP basics: browsers and servers talk through requests and responses. Burp Suite just lets me see that conversation.
+2. Methods: GET, POST, PUT, DELETE. Each one has a purpose, and using the wrong one in the wrong place is where bugs hide.
+3. Status codes: 200, 301, 403, 404, 500. A 403 and a 404 tell you very different things about what's behind a page.
+4. Headers and cookies: this is how sites remember who you are. Sessions, logins and authentication all run through here.
+
+Nobody posts about HTTP. But every serious vulnerability starts with reading a request properly.
+
+Full write-up on Medium (link in comments).
+Day 03 next.
+
+What HTTP concept took you the longest to understand?
+
+#BugBounty #Cybersecurity #EthicalHacking #LearningInPublic

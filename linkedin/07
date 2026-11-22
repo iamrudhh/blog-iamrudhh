@@ -1,0 +1,19 @@
+Day 07 of my bug bounty series: finding hidden content.
+
+Not everything on a website is linked from the homepage.
+
+Today I learned 4 ways to find what isn't obvious:
+
+1. Directories: hidden folders and endpoints inside a web app.
+2. Parameters: URL parameters can change how an application behaves.
+3. robots.txt: it tells search engines what to skip, which can also hint at what exists.
+4. Sitemaps: they show how a site is structured.
+
+One rule: only do this on targets where scope allows it.
+
+Full write-up on Medium (link in comments).
+Day 08 next: working with Burp Suite.
+
+Have you ever found something interesting in a robots.txt?
+
+#BugBounty #Cybersecurity #EthicalHacking #LearningInPublic

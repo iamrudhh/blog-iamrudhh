@@ -1,0 +1,19 @@
+Day 06 of my bug bounty series: exploring the OWASP Top 10.
+
+Every hunter hears about it. Today I finally sat down and read it properly.
+
+Here are the 4 I focused on first:
+
+1. OWASP Top 10: a list of the most critical web security risks.
+2. Injection: what happens when untrusted input changes how an application behaves.
+3. Broken access control: users reaching things they shouldn't be able to.
+4. Security misconfiguration: simple setup mistakes that weaken everything else.
+
+The list isn't a checklist to memorize. It's a map of where to look.
+
+Full write-up on Medium (link in comments).
+Day 07 next: finding hidden content.
+
+Which OWASP category do you find hardest to understand?
+
+#BugBounty #OWASP #Cybersecurity #EthicalHacking

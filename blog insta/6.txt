@@ -1,0 +1,95 @@
+The Friend Who Wasn't
+Four messages, four emotions, and the reason none of them needed a password
+Ayesha runs a small pottery page with 2,300 followers and a backlog of orders she can't keep up with.
+
+She's not careless. She'd read the posts about fake login pages. She checked URLs. She had 2FA on. She'd changed her password after the last round of warnings went around her group chat.
+
+But every attack that got anywhere with her came at her sideways — through a favour, a prize, a job offer, a threat. Not one of them asked her to log in.
+
+That's social engineering. It doesn't need a flaw in the software, because it targets the flaw in the software's user: the fact that we respond to people, and we respond fast.
+
+Here are the four messages she got in one month.
+
+Message One: The Favour
+"hey!! pls vote for my cousin, she's 4th rn and the comp closes tn 😭 link's here"
+
+From _.sana.ceramics — Sana, her kiln supplier, who she talks to weekly.
+
+Ayesha voted. Of course she voted. It took six seconds, it was for Sana's cousin, and Sana is someone she owes about forty favours to.
+
+The account was a clone. Sana's actual handle was sana.ceramics. The clone had a leading underscore and a full stop, both invisible at a glance on a phone screen. Same photo. Same bio, copied. Three hundred followers, all real people who'd made the same six-second decision.
+
+The vote page asked her to log in with Instagram to "verify her vote was unique." She did.
+
+The favour was free. The login was the price, and she never noticed paying it.
+
+Message Two: The Prize
+Two weeks later, a DM from an account using a well-known ceramics brand's name and logo.
+
+"Congrats! You've been selected in our maker giveaway. 3 winners announced Friday. Claim your spot here before it closes — only 12h."
+
+She hadn't entered a giveaway. That should have been the tell. But "selected" is a flattering word, and twelve hours is a short window, and the prize was a £400 wheel she'd been saving for since spring.
+
+The claim page asked for her name, her email, her address, and then her Instagram login — "to confirm the account."
+
+Three fields would have been normal. The fourth was the actual purpose.
+
+"Selected" flatters you. "Closes in 12 hours" rushes you. Together they skip the part where you think.
+
+Message Three: The Job
+This one was the best built, and it arrived on her business email.
+
+A "brand partnerships manager" from a homeware label, referencing two of her actual posts by name, offering £600 for a three-post feature. Professional, specific, plausible. Attached: Ayesha_Collab_MediaKit.zip.
+
+She unzipped it on her laptop because the pitch was good and £600 is a lot of clay.
+
+Inside were three PDFs, a rate card, and a file called MediaKit_Viewer.exe. She double-clicked it. Nothing visible happened, so she opened the PDFs and got on with her day.
+
+The .exe was an infostealer. It took her saved browser passwords and her session cookies and left. The PDFs were real. That's what made it work — the bait was genuinely good work, and good work is disarming.
+
+Specific detail is the most convincing thing an attacker can produce, and it costs them one scroll through your grid.
+
+Message Four: The Threat
+Three days later, a DM from @meta_support_help.
+
+"Your account has been flagged for copyright. You have 24 hours to appeal or the page will be unpublished. Appeal here."
+
+She'd had a genuine copyright strike once, two years ago, and it had terrified her. The word "copyright" alone got her pulse up.
+
+The link went to a page asking her to log in and "submit her appeal." She typed her email and password, hit submit, and the page sat there loading.
+
+It never resolved. She closed it and tried her real password on the real app.
+
+It didn't work. It had already been changed.
+
+Fear is the fastest lever there is. It gets you before the reasoning part of your brain wakes up.
+
+The Thread
+Look at what all four had in common.
+
+Not one of them required her to download anything scary or visit a domain that looked obviously wrong. Every single one arrived from a person-shaped thing she had a reason to trust, or want something from, or be afraid of.
+
+And every one of them ended at the same place: a login form.
+
+That's the whole trick. Social engineering isn't a way around security. It's a way of getting you to hand the security over yourself, happily, while thinking you're doing something else.
+
+Every attack ends at a login page. The only question is whether you arrived there by choice or by nudge.
+
+What Actually Helps
+You can't patch being human. You can install habits around it.
+
+Never log in from a link in a DM. Close the message, open the app. This one rule defeats messages one, two and four completely.
+Read handles, not photos. Compare character by character. A leading or trailing _ or . is the standard clone.
+Be suspicious of "selected." If you didn't enter, it isn't a win. If a brand really picked you, their handle will be verified and old.
+Treat .exe, .apk and .zip as suspect until verified. A real media kit is a PDF or a link. Check the sender's actual domain, not the display name.
+Fake support never DMs first. Real Meta support has no DM channel. Open the app and check the notification there — if it's real, it's also in your app.
+Wait twenty minutes. Every one of these relies on speed. Give a message twenty minutes and the urgency evaporates.
+Ayesha lost the page for four days. She got it back with a video selfie and a lot of patience, and the first thing she did was post a Story telling her followers that the giveaway DMs weren't her.
+
+Two of them had already clicked. One had already paid a "shipping fee."
+
+The clone accounts are still up. _.sana.ceramics still has three hundred followers. Sana still doesn't know it exists.
+
+Day 06 of a series on how Instagram accounts actually get taken, and what stops it. Day 05 covered password attacks. Day 07 covers what happens in the minutes after a takeover — and the full defence checklist.
+
+If this helped, follow along — and go look at the actual handle of the next "friend" who DMs you a link.

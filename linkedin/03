@@ -1,0 +1,19 @@
+Day 03 of my bug bounty series: setting up the environment.
+
+Before hunting anything, I wanted my setup to be clean. A messy setup wastes hours.
+
+Today I set up 4 things:
+
+1. Burp Suite: it sits between my browser and the website, so I can see every request.
+2. Browser setup: Firefox now sends its traffic through Burp's proxy.
+3. Extensions: Wappalyzer shows the tech behind a site. Cookie Editor lets me read and edit cookies.
+4. Workspace: one folder and one notes app for everything. If it's not written down, it didn't happen.
+
+Tools don't find bugs. But a good setup makes it easier to notice them.
+
+Full write-up on Medium (link in comments).
+Day 04 next: recon.
+
+What's the one extension you can't test without?
+
+#BugBounty #Cybersecurity #EthicalHacking #LearningInPublic

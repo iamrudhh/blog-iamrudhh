@@ -1,0 +1,19 @@
+Day 05 of my bug bounty series: understanding authentication.
+
+Login pages look simple. Behind them is where a lot of serious bugs live.
+
+Today I learned 4 things:
+
+1. Authentication: how a user proves who they are.
+2. Authorization: what that user is allowed to do. It's not the same thing as authentication.
+3. Sessions: a session ID is how the site remembers you after login.
+4. Cookies: where that session ID usually sits, along with preferences.
+
+Mixing up authentication and authorization is one of the most common beginner mistakes. I did it too.
+
+Full write-up on Medium (link in comments).
+Day 06 next: OWASP Top 10.
+
+Which one confused you first, authentication or authorization?
+
+#BugBounty #Cybersecurity #EthicalHacking #LearningInPublic

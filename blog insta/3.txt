@@ -1,0 +1,95 @@
+He Turned On 2FA. Then They Attacked the 2FA.
+OTP bots, SIM swaps, and the notification flood that nearly wore him down
+Arjun turned on two-factor authentication the week after Priya got hacked.
+
+He watched her spend two days locked out of her own account, watched the DMs go out to her followers, watched her file the same report six times. Then he went into settings and turned on every security option Instagram had.
+
+He felt better. He should have. 2FA is genuinely the single biggest upgrade you can make.
+
+But a month later, his phone rang at 11:40pm, and he learned the thing most people don't know: 2FA isn't a wall. It's a lock on a door that can be picked, copied, or walked around.
+
+Here's what those four weeks actually looked like.
+
+The Call
+The number looked normal. Local area code, nothing weird. Arjun answered because it was late and he assumed it was family.
+
+A recorded voice, calm and professional:
+
+"This is the security team. A login attempt was detected on your Instagram account. To verify your identity, your one-time code has been sent to your phone. Please read it back."
+
+His phone buzzed. A real Instagram code arrived. Six digits.
+
+He read it out.
+
+The voice said thank you, the line clicked off, and by the time he put the phone down the attacker was already inside — because that code was never for verification. It was for the login they'd triggered thirty seconds earlier, and the whole call existed just to get it off him.
+
+A code sent to your phone is only useful to whoever knows it. Read it out loud and that's no longer just you.
+
+The Problem With the Call
+Notice how convincing it is. Not the voice — the timing.
+
+The code arrives while the "security team" is on the line, so it feels like the call caused it. It didn't. The attacker triggered the login, the code came, and the call was sitting there waiting to catch it.
+
+This works because OTPs are short-lived. They expire in minutes, sometimes seconds. There's no time to think, and that's the entire design of the attack.
+
+An OTP is not a secret you keep forever. It's a secret you keep for ninety seconds, and ninety seconds is exactly long enough for a confident voice on the phone.
+
+The code arriving during the call isn't proof the call is real. It's proof the attacker knows how to press a button.
+
+The SIM Swap Attempt
+Two weeks later, someone called his carrier.
+
+They had his name, his address, his date of birth — all of it scraped from the same public recon that started Priya's problem. They said they'd lost their phone and needed a replacement SIM sent out.
+
+The carrier asked security questions. The attacker had the answers. Arjun got a text saying his number was being ported and, because he was asleep, he didn't question it.
+
+If it had gone through, every SMS code from that point on would have landed on a stranger's handset. His phone would still work. His number would just quietly belong to someone else.
+
+He caught it the next morning by calling the carrier. The port was half-done and they reverted it. Barely.
+
+If someone controls your number, they control every code that's supposed to protect you.
+
+The Flood
+The one that actually nearly worked wasn't clever. It was annoying.
+
+Tuesday, 2am. His phone started buzzing.
+
+Approve login? Approve. Approve login? Approve. Then again. And again. Forty-something notifications in four minutes, each one a real Instagram prompt asking is this you?
+
+At 2am, half asleep, the brain stops reading and starts swiping. Arjun tapped approve on the fourth one just to make it stop.
+
+Except one of them was the attacker's. He'd buried it in the middle of the pile and waited for Arjun to stop paying attention.
+
+Notification floods aren't trying to fool you. They're trying to exhaust you into agreeing.
+
+The Screenshot
+The last piece was the dumbest and the most dangerous.
+
+When Arjun turned on 2FA, Instagram handed him ten recovery codes and told him to store them somewhere safe.
+
+He screenshotted them. The screenshot went to his camera roll, which synced to iCloud, which was tied to an email address he'd been using since school — the same email that showed up in two breaches in 2021.
+
+Ten codes. Each one a permanent, non-expiring way past his 2FA. Sitting in a folder anyone with his email could eventually reach.
+
+He'd secured the front door and left the spare keys on the lawn.
+
+Recovery codes are spare keys. Treat them like the account is already half-open.
+
+What Actually Helps
+2FA is still worth having. All of this is about doing it in the order that doesn't hand the attacker a shortcut.
+
+Switch from SMS to an authenticator app. The codes are generated on your phone, not sent to your number. A SIM swap then does nothing. This single change kills two of the four attacks above.
+Never read a code out to anyone. Not support, not a "security team," not your bank. If they needed it, they'd already have it.
+Approve login prompts only when you're expecting one. If you didn't just try to log in, hit deny and change your password.
+Don't screenshot recovery codes. Write them on paper, or put them in a password manager. Store them somewhere that isn't synced to the same email your account runs on.
+Ask your carrier for a port-out PIN. Most have one. It's the difference between a SIM swap being annoying and being impossible.
+Set a login alert. Any new-device email is your early warning. Don't ignore the boring ones.
+Arjun kept 2FA on. He moved to an authenticator app the next morning, got a port-out PIN from his carrier, and wrote his recovery codes on the back of an envelope that now lives in a drawer.
+
+He also turned off notification approvals entirely. Now a login needs a code, and the code lives on his phone, and nobody can talk it out of him.
+
+It's slightly less convenient. It's a lot harder to take.
+
+Day 03 of a series on how Instagram accounts actually get taken, and what stops it. Day 02 covered the fake login page. Day 04 covers session theft — the attacks that don't need your password or your code at all.
+
+If this helped, follow along — and go switch from SMS to an authenticator app tonight.

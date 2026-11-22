@@ -1,0 +1,529 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bug Bounty Logs | iamrudhh</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, Arial, sans-serif;
+  background: #fff;
+  color: #171717;
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 250px;
+  border-right: 1px solid #eee;
+  padding: 30px 20px;
+  flex-shrink: 0;
+}
+
+.brand {
+  margin-bottom: 35px;
+}
+
+.brand h2 {
+  font-size: 19px;
+  letter-spacing: -0.7px;
+}
+
+.brand p {
+  color: #888;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.section-label {
+  font-size: 10px;
+  color: #999;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.category {
+  display: block;
+  width: 100%;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  padding: 12px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  color: #666;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.category:hover,
+.category.active {
+  background: #f5f5f5;
+  color: #111;
+  font-weight: 600;
+}
+
+.sidebar-footer {
+  margin-top: 35px;
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* MAIN */
+.main {
+  flex: 1;
+  min-width: 0;
+  padding: 45px 6%;
+  max-width: 1200px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.profile {
+  font-size: 13px;
+  color: #777;
+}
+
+.profile strong {
+  color: #111;
+}
+
+.header h1 {
+  font-size: 30px;
+  letter-spacing: -1px;
+  margin-bottom: 8px;
+}
+
+.header p {
+  font-size: 13px;
+  color: #888;
+  line-height: 1.6;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.search {
+  flex: 1;
+  min-width: 0;
+  padding: 12px 14px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  font-size: 13px;
+  outline: none;
+}
+
+.search:focus {
+  border-color: #aaa;
+}
+
+.add-btn {
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 8px;
+  background: #171717;
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background: #333;
+}
+
+/* POSTS */
+.post-list {
+  border-top: 1px solid #eee;
+}
+
+.post {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 20px 5px;
+  border-bottom: 1px solid #eee;
+}
+
+.post h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 7px;
+  line-height: 1.5;
+}
+
+.post small {
+  color: #999;
+  font-size: 11px;
+}
+
+.post a {
+  color: #777;
+  font-size: 12px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.post a:hover {
+  color: #000;
+}
+
+.empty {
+  padding: 50px 10px;
+  text-align: center;
+  color: #999;
+  font-size: 13px;
+}
+
+/* ADD FORM */
+.add-form {
+  display: none;
+  padding: 20px;
+  margin-bottom: 25px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+
+.add-form.show {
+  display: block;
+}
+
+.add-form input,
+.add-form select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #eee;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  background: white;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.form-buttons button {
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.save {
+  background: #171717;
+  color: white;
+}
+
+.cancel {
+  background: #f2f2f2;
+  color: #333;
+}
+
+.count {
+  font-size: 11px;
+  color: #999;
+  margin-top: 20px;
+}
+
+/* MOBILE */
+@media(max-width: 700px) {
+  .app {
+    display: block;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: 0;
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+  }
+
+  .brand {
+    margin-bottom: 20px;
+  }
+
+  .sidebar nav {
+    display: flex;
+    gap: 7px;
+    overflow-x: auto;
+  }
+
+  .category {
+    white-space: nowrap;
+    width: auto;
+    margin: 0;
+    flex-shrink: 0;
+  }
+
+  .section-label {
+    margin-bottom: 8px;
+  }
+
+  .sidebar-footer {
+    display: none;
+  }
+
+  .main {
+    padding: 28px 20px;
+  }
+
+  .header h1 {
+    font-size: 25px;
+  }
+
+  .post {
+    padding: 17px 2px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="app">
+
+  <aside class="sidebar">
+
+    <div class="brand">
+      <h2>Security Logs.</h2>
+      <p>@iamrudhh · Personal Blog Archive</p>
+    </div>
+
+    <p class="section-label">CATEGORIES</p>
+
+    <nav>
+      <button class="category active" data-category="all">
+        All Posts
+      </button>
+
+      <button class="category" data-category="daily">
+        Day 01–100 Series
+      </button>
+
+      <button class="category" data-category="hack">
+        How Hackers Actually Hack
+      </button>
+    </nav>
+
+    <div class="sidebar-footer">
+      Learn · Build · Secure
+    </div>
+
+  </aside>
+
+
+  <main class="main">
+
+    <div class="topbar">
+      <div class="profile">
+        <strong>iamrudhh</strong> / Blog Archive
+      </div>
+    </div>
+
+    <header class="header">
+      <h1 id="pageTitle">All Posts</h1>
+      <p>
+        My cybersecurity learning journey, bug bounty notes
+        and breakdowns of real-world hacking techniques.
+      </p>
+    </header>
+
+    <div class="actions">
+      <input
+        class="search"
+        id="search"
+        type="search"
+        placeholder="Search blogs..."
+      >
+
+      <button class="add-btn" id="openForm">
+        + Add Link
+      </button>
+    </div>
+
+    <form class="add-form" id="addForm">
+
+      <input
+        type="text"
+        id="title"
+        placeholder="Blog title"
+        required
+      >
+
+      <select id="category">
+        <option value="daily">Day 01–100 Series</option>
+        <option value="hack">How Hackers Actually Hack</option>
+      </select>
+
+      <input
+        type="url"
+        id="url"
+        placeholder="Medium / Blog URL"
+        required
+      >
+
+      <div class="form-buttons">
+        <button class="save" type="submit">Save Link</button>
+        <button class="cancel" type="button" id="cancelForm">
+          Cancel
+        </button>
+      </div>
+
+    </form>
+
+    <section class="post-list" id="postList"></section>
+
+    <p class="count" id="postCount"></p>
+
+  </main>
+
+</div>
+
+<script>
+const STORAGE = "iamrudhh_blog_links";
+
+let posts = JSON.parse(localStorage.getItem(STORAGE) || "[]");
+let activeCategory = "all";
+
+const categories = {
+  all: "All Posts",
+  daily: "Day 01–100 Series",
+  hack: "How Hackers Actually Hack"
+};
+
+const postList = document.getElementById("postList");
+
+function save() {
+  localStorage.setItem(STORAGE, JSON.stringify(posts));
+}
+
+function render() {
+  const search = document.getElementById("search")
+    .value.toLowerCase();
+
+  const filtered = posts.filter(post => {
+    const categoryMatch =
+      activeCategory === "all" ||
+      post.category === activeCategory;
+
+    const searchMatch =
+      post.title.toLowerCase().includes(search);
+
+    return categoryMatch && searchMatch;
+  });
+
+  document.getElementById("pageTitle").textContent =
+    categories[activeCategory];
+
+  postList.innerHTML = "";
+
+  if (!filtered.length) {
+    postList.innerHTML =
+      '<div class="empty">No blogs here yet. Add your first link.</div>';
+  }
+
+  filtered.forEach(post => {
+    const article = document.createElement("article");
+    article.className = "post";
+
+    const info = document.createElement("div");
+    const heading = document.createElement("h3");
+    const meta = document.createElement("small");
+
+    heading.textContent = post.title;
+    meta.textContent = categories[post.category];
+
+    info.append(heading, meta);
+
+    const link = document.createElement("a");
+    link.href = post.url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.textContent = "Read ↗";
+
+    article.append(info, link);
+    postList.appendChild(article);
+  });
+
+  document.getElementById("postCount").textContent =
+    filtered.length + " blog links";
+}
+
+// Category selection
+document.querySelectorAll(".category").forEach(button => {
+  button.addEventListener("click", () => {
+    document.querySelectorAll(".category")
+      .forEach(btn => btn.classList.remove("active"));
+
+    button.classList.add("active");
+    activeCategory = button.dataset.category;
+    render();
+  });
+});
+
+// Search
+document.getElementById("search")
+  .addEventListener("input", render);
+
+// Open form
+document.getElementById("openForm").onclick = () => {
+  document.getElementById("addForm").classList.add("show");
+};
+
+document.getElementById("cancelForm").onclick = () => {
+  document.getElementById("addForm").classList.remove("show");
+};
+
+// Add blog
+document.getElementById("addForm")
+  .addEventListener("submit", event => {
+
+    event.preventDefault();
+
+    const title = document.getElementById("title").value.trim();
+    const url = document.getElementById("url").value.trim();
+
+    if (!title || !url) return;
+
+    posts.unshift({
+      title,
+      url,
+      category: document.getElementById("category").value
+    });
+
+    save();
+    render();
+
+    event.target.reset();
+    event.target.classList.remove("show");
+  });
+
+render();
+</script>
+
+</body>
+</html>

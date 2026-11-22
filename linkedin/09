@@ -1,0 +1,19 @@
+Day 09 of my bug bounty series: understanding input validation.
+
+Many vulnerabilities come down to one thing: an app trusted input it shouldn't have.
+
+Today I learned 4 things:
+
+1. User input: why every piece of user data must be validated.
+2. Client vs server: browser-side checks can be bypassed, so the server must check too.
+3. Encoding: URL, HTML and Base64 basics.
+4. Common mistakes: input handling issues that can turn into vulnerabilities.
+
+Never trust the browser. That's the lesson of the day.
+
+Full write-up on Medium (link in comments).
+Day 10 next: my first vulnerability hunt.
+
+Did you know about client-side vs server-side validation when you started?
+
+#BugBounty #Cybersecurity #EthicalHacking #LearningInPublic

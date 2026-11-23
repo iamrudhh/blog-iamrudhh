@@ -23,6 +23,7 @@ function el(tag, className, text) {
     return node;
 }
 
+
 function renderPosts(posts) {
     listEl.replaceChildren();
 
@@ -33,22 +34,32 @@ function renderPosts(posts) {
 
     posts.forEach(post => {
         const href = safeUrl(post.url);
-        if (!href) return;
 
-        const card = el("a", "blog-card");
-        card.href = href;
-        card.target = "_blank";
-        card.rel = "noopener noreferrer";
+        // Create a card for every post
+        const card = el(href ? "a" : "div", "blog-card");
+
+        if (href) {
+            card.href = href;
+            card.target = "_blank";
+            card.rel = "noopener noreferrer";
+        }
 
         card.append(
             el("div", "blog-meta", post.day || ""),
             el("div", "blog-title", post.title || ""),
-            el("div", "blog-description", post.description || ""),
-            el("span", "read-more", "READ ARTICLE ↗")
+            el("div", "blog-description", post.description || "")
         );
+
+        if (href) {
+            card.appendChild(el("span", "read-more", "READ ARTICLE ↗"));
+        } else {
+            card.appendChild(el("span", "read-more", "COMING SOON"));
+        }
+
         listEl.appendChild(card);
     });
 }
+
 
 function showCategory(category, link) {
     navEl.querySelectorAll(".nav-item").forEach(i => i.classList.remove("active"));

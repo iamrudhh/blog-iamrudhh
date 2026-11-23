@@ -45,9 +45,10 @@
         },
         {
           "day": "DAY 02",
-          "title": "PHISHING : The Fake login Page",
-          "description": "How do attackers trick people into giving away their Instagram passwords?",
+          "title": "PHISHING: The Fake Login Page",
+          "description": "How attackers trick people into giving away their Instagram passwords.",
           "url": "https://iamrudhh.medium.com/the-hack-started-three-weeks-before-06b7ac76ed25?sharedUserId=iamrudhh"
+        }
       ]
     }
   ]

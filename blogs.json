@@ -42,7 +42,12 @@
           "title": "RECON: They Study You Before They Touch You",
           "description": "Understanding OSINT, public information and digital footprints.",
           "url": "https://iamrudhh.medium.com/the-hack-started-three-weeks-before-0cc5e43cda78?sharedUserId=iamrudhh"
-        }
+        },
+        {
+          "day": "DAY 02",
+          "title": "PHISHING : The Fake login Page",
+          "description": "How do attackers trick people into giving away their Instagram passwords?",
+          "url": "https://iamrudhh.medium.com/the-hack-started-three-weeks-before-06b7ac76ed25?sharedUserId=iamrudhh"
       ]
     }
   ]

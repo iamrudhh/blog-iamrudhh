@@ -1,35 +1,36 @@
+
 {
   "categories": [
     {
       "id": "bugbounty",
       "title": "Bug Bounty Series",
       "description": "Documenting my bug bounty journey, learning web security, discovering vulnerabilities and understanding how to find them.",
-      "post" : [
-    {
-    "day": "DAY 01",
-    "title": "Day 01: Starting Bug Bounty From Zero",
-    "description": "The foundation of finding security vulnerabilities.",
-    "url": "https://iamrudhh.medium.com/day-01-starting-bug-bounty-from-zero-696aa78f97b6?sharedUserId=iamrudhh"
-  },
-  {
-    "day": "DAY 02",
-    "title": "Day 02: Understanding How the Web Works",
-    "description": "Understanding how the web works.",
-    "url": "https://iamrudhh.medium.com/day-02-understanding-how-the-web-works-3967d9694082?sharedUserId=iamrudhh"
-  },
-  {
-    "day": "DAY 03",
-    "title": "Day 03: Bug Bounty: Setting Up Your Hacking Environment",
-    "description": "Setting up the hacking environment.",
-    "url": "https://iamrudhh.medium.com/day-03-bug-bounty-setting-up-your-hacking-environment-3539f42a405d?sharedUserId=iamrudhh"
-  },
-  {
-    "day": "DAY 04",
-    "title": "Day 04: Bug Bounty: Introduction to Reconnaissance",
-    "description": "Introduction to reconnaissance.",
-    "url": "https://iamrudhh.medium.com/day-04-bug-bounty-introduction-to-reconnaissance-43d041655c37?sharedUserId=iamrudhh"
-  }
-]
+      "posts": [
+        {
+          "day": "DAY 01",
+          "title": "Day 01: Starting Bug Bounty From Zero",
+          "description": "The foundation of finding security vulnerabilities.",
+          "url": "https://iamrudhh.medium.com/day-01-starting-bug-bounty-from-zero-696aa78f97b6?sharedUserId=iamrudhh"
+        },
+        {
+          "day": "DAY 02",
+          "title": "Day 02: Understanding How the Web Works",
+          "description": "Understanding how the web works.",
+          "url": "https://iamrudhh.medium.com/day-02-understanding-how-the-web-works-3967d9694082?sharedUserId=iamrudhh"
+        },
+        {
+          "day": "DAY 03",
+          "title": "Day 03: Bug Bounty: Setting Up Your Hacking Environment",
+          "description": "Setting up the hacking environment.",
+          "url": "https://iamrudhh.medium.com/day-03-bug-bounty-setting-up-your-hacking-environment-3539f42a405d?sharedUserId=iamrudhh"
+        },
+        {
+          "day": "DAY 04",
+          "title": "Day 04: Bug Bounty: Introduction to Reconnaissance",
+          "description": "Introduction to reconnaissance.",
+          "url": "https://iamrudhh.medium.com/day-04-bug-bounty-introduction-to-reconnaissance-43d041655c37?sharedUserId=iamrudhh"
+        }
+      ]
     },
     {
       "id": "instagram",
